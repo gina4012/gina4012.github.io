@@ -62,14 +62,30 @@ p{
 .text-orange{
     color: #d97b00;
 }
-
+.b-r-5{
+    border-radius: 5ch;
+}
 /* header */
 .logo{
-    
     height: 10vh;
     width: auto;
     margin: 1rem 0.4rem 0.2rem 2.7rem;
 }
+@media (max-width:576px) {
+    .logo{
+        min-width: 20ch;
+        height: auto;
+        margin: 1rem 0.4rem 0.2rem 2.7rem;
+    }
+}
+@media (max-width:768px) {
+    .logo{
+        min-width: 20ch;
+        height: auto;
+        margin: 1rem 0.4rem 0.2rem 2.7rem;
+    }
+}
+
 .header-area{
     top:0;
     left: 0;
@@ -86,9 +102,7 @@ p{
     margin-right: auto;
 }
 .navbar-nav{
-    margin-left: 30rem;
     padding-top: 1rem;
-    
 }
 .navbar-nav a:hover{
     color: #d97b00;
@@ -106,12 +120,7 @@ p{
 ul li{
     list-style: none;
 }
-.k{
-    height: auto;
-    text-align: center;
-    display: block;
-    max-width: 100%;
-}
+
 
 
 /* 輪播圖 */
@@ -163,15 +172,54 @@ ul li{
     width: 50vh;
 }
 /* main */
+#attractions{
+    height: 100vh;
+    background-color: #eeeeee;
+}
 .about-nav{
     margin: 10rem 0 10rem 0;
-}
-.image1{
-    border-radius: 5ch;
 }
 .title{
     font-weight: 600;
     font-size: 4ch;
+}
+.scape{
+    margin-top: 5ch;
+    margin-bottom: 10ch;
+    height: 300px;
+    text-align: center;
+    display: block;
+    max-width: 100%;
+}
+@media (max-width:576px) {
+    #attractions{
+        height: 900px;
+        border-radius: 5ch;
+    }
+    .scape-nav{
+        height: auto;
+    }
+    .scape{
+    margin-top: 2ch;
+    margin-bottom: 0ch;
+    height: auto;
+    }
+}
+.view-nav{
+    height: auto;
+}
+iframe{
+    width: 100%;
+}
+#guide-traffic p{
+    color: #305d60;
+    margin-top: 3ch;
+    font-size: 1.4rem;
+}
+.flower-line{
+    border-top: 2px dashed #ff8e75;
+    border-bottom:2px dashed #19d9df;
+    
 }
 /* footer */
 .footer-title{
@@ -214,7 +262,7 @@ footer li span::after{
         display:none;
     }
 }
-@media(max-width:991px){
+@media(max-width:992px){
     footer span{
         display: none;
     }

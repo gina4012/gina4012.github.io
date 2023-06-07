@@ -35,20 +35,23 @@
             <img src="嘎瓦拉文字LOGO-1.svg" alt="嘎瓦拉商標">
           </a>
         </div>
-        <!-- 漢堡 -->
-        <div class="d-none">
-          <i class="the-menu"></i>
-        </div>
         <!-- 連結文字 -->
         <div class="link-list">
+          <div class="rwd-menu-icon d-none">
+            <i class="icon-the-menu"></i>
+          </div>
+          <!-- 漢堡 -->
+          <div class="rwd-close-icon d-none">
+            <i class="icon-cross"></i>
+          </div>
           <div class="box">
-            <div class="row">
-              <ul class="navbar-nav flex-row" >
+            <div class="row col-100">
+              <ul class="navbar-nav flex-row">
                 <li class="nav-item active"><a class="header-text" href="#now">最新消息</a></li>
                 <li class="nav-item active"><a class="header-text" href="#about">認識嘎瓦拉</a></li>
                 <li class="nav-item active"><a class="header-text" href="#attractions">景點介紹</a></li>
                 <li class="nav-item active"><a class="header-text" href="room-type.html">房型介紹</a></li>
-                <li class="nav-item active"><a class="header-text" href="guide-traffic.html">交通指引</a></li>
+                <li class="nav-item active"><a class="header-text" href="#guide-traffic">交通指引</a></li>
                 <li class="nav-item active"><a class="header-text" href="#service">服務與設施</a></li>
                 <li class="nav-item active"><a class="header-text" href="#contact">聯絡我們</a></li>
               </ul>
@@ -57,12 +60,13 @@
         </div><!-- top-header -->
       </div><!-- container-fluid -->
   </header>
+
   <article class="h-100">
     <!-- 輪播圖 -->
     <div class="slideshow p-r h-100 w-100">
       <div class="bg-overlay h-100">
         <!-- 圖 -->
-        <div class="slides-img j-c-c ps-a" style="background-image: url(banner1.jpg);"></div>
+        <div class="slides-img j-c-c ps-a" style="background-image: url(images/banner1.jpg);"></div>
         <!-- 文字 -->
         <div class="box h-100">
           <div class="row h-100">
@@ -89,7 +93,7 @@
       <div class="row about-nav a-it-c">
         <div class="col-sm-12 col-md-6">
           <div class="image1">
-            <img src="2015-12-10-173322-59.jpg" class="image1" alt="">
+            <img src="images/2015-12-10-173322-59.jpg" class="b-r-5" alt="">
           </div>
         </div><!-- col-6 -->
         <div class="col-sm-12 col-md-6">
@@ -101,45 +105,68 @@
       <!-- 間隔 -->
 
       <!-- 景點介紹 -->
-      <div class="row a-it-c py-5" id="attractions" style="background-color: rgba(206, 255, 255, 0.179);">
+      <div class="row a-it-c py-5" id="attractions" >
         <div class="ta-c">
           <h2 class="title text-all">景點介紹</h2>
           <p class="text-all">夜晚除了有滿滿星空作伴，還可欣賞高雄、東港沿岸的點點港都夜景，<br>享受海島風味晚餐，或與家人好友在星空下品嚐海鮮燒烤。<br>在徐徐海風中，渡過唯美浪漫的小琉球之旅。</p>
         </div><!-- ta-c -->
-        <div class="col">
-          <div class="k">
-            <img src="attraction1.jpg"alt="">
-          </div><!-- k -->
-        </div><!-- col -->
-        <div class="col">
-          <div class="k">
-            <img src="attraction5.jpg" alt="">
-          </div><!-- k -->
-        </div><!-- col -->
-        <div class="col">
-          <div class="k">
-          <img src="attraction6.jpg" alt="">
-          </div><!-- k -->
+        <div class="row view-nav">
+          <div class="col-sm-12 col-lg-4 scape-nav">
+            <div class="scape">
+              <img src="images/attraction1.jpg" alt="" class="b-r-5">
+            </div><!-- scape -->
+          </div><!-- col -->
+          <div class="col-sm-12 col-lg-4">
+            <div class="scape hover-overlay">
+              <img src="images/attraction5.jpg" alt="" class="b-r-5">
+            </div><!-- scape -->
+          </div><!-- col -->
+          <div class="col-sm-12 col-lg-4">
+            <div class="scape hover-overlay">
+            <img src="images/attraction6.jpg" alt="" class="b-r-5">
+        </div>
+        
+          </div><!-- scape -->
         </div><!-- col -->
       </div><!-- row -->
     </div><!-- box -->
+
+        <!-- 交通指引 -->
+    <article id="guide-traffic" class="py-5">
+      <div class="box">
+        <div class="row ">
+          <div class="col-lg-6">
+            <h3 class="text-all title ta-c my-4">交通指引</h3>
+            <p class="px-sm-0 px-md-3 px-lg-5 py-5 flower-line">1.&nbsp&nbsp自行前往旅館<br>
+              2.&nbsp（建議方案）請旅館代訂船票、機車：東港碼頭搭船→抵達小琉球領取機車→自行前往旅館</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6534.751867176047!2d120.36462933677394!3d22.345591691793864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3471e56413708857%3A0x5833d4ea4d86b66c!2zOTI55bGP5p2x57ij55CJ55CD6YSJ5b6p6IiI6LevMTYxLTnomZ8!5e1!3m2!1szh-TW!2stw!4v1686056302607!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;border-radius: 3ch;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
   </main>
 
-  <footer id="contact" class="bg-img ps-r" style="background-color: rgb(186, 210, 228);">
+  
+
+  <footer id="contact" class="bg-img ps-r" style="background-color: #a4dcf0e3;">
     <div class="footer-content p-t-6 p-b-2">
       <div class="box container">
         <div class="row jc-c-bt">
           <!-- 社群連結 -->
-          <div class="col-100 col-md-5 col-lg-4 m-b-m-2 col-sm-12">
+          <div class="col-100 col-md-5 col-lg-4 col-sm-12">
             <!-- 商標 -->
-            <div class="footer-logo m-b-2 mb-sm-4">
+            <div class="footer-logo ">
               <a href="index.html" class="d-inline-block" title="回首頁">
                 <img src="嘎瓦拉文字LOGO-1.svg" alt="嘎瓦拉會館">
               </a>
             </div><!--footer-logo-->
           </div><!--col-l-33-->
           <!-- 連結 -->
-          <div class="col-100 col-md-5 col-lg-4 m-b-m-2 col-sm-12">
+          <div class="col-100 col-md-5 col-lg-4 mb-sm-2 col-sm-12">
             <div class="footer-title m-b-1">
               <h5>相關連結</h5>
             </div><!--footer-title-->
@@ -191,6 +218,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+  <script src="plus.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </body>
 
