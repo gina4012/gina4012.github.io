@@ -259,6 +259,9 @@ footer li span::after{
     margin-bottom: 0ch;
     height: auto;
     }
+    .box ul{
+        display:none;
+    }
 }
 @media(min-width:992px) {
     footer br{
